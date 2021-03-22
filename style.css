@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+nav {
+  background-image: url("dev.png");
+  background-size: cover;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 10;
+}
+
+/*This is to overwrite the click color after a link was clicked.*/
+nav a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.navbutton {
+  background-color: #72a5f7;
+  color: white;
+  border-radius: 40px;
+  border: 2px solid black;
+  min-height: 75px;
+  width: 200px;
+  line-height: 75px; /*Specify line-height in parallel to element height to get the text into the vertical center of the button*/
+  margin: 5px;
+  text-align: center;
+}
+
+nav a:hover .navbutton {
+  background-color: #ff4763;
+}
+
+.landing {
+  font-weight: bold;
+  background-color: #72a5f7;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 85px;
+}
+
+.leftpic {
+  background-image: url("codecode.jpg");
+  float: left;
+  position: relative;
+  top: auto;
+  padding: 30px 30px 20px 10px;
+}
+
+.leftpic {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+main {
+  position: relative;
+  top: 85px;
+  display: inline-flex;
+}
+
+.head {
+  border: 3px solid black;
+  width: 15%;
+}
+
+.content {
+  display: inline-flex;
+  align-items: stretch;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.content h2 {
+  position: relative;
+}
+
+.content h2 span {
+  position: absolute;
+  top: -100px;
+}
+
+footer {
+  background-image: url("dev.png");
+  background-size: cover;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  z-index: 9;
+  bottom: 0;
+}
+
+
+.container {
+  width: 20%;
+  height: 50%;
+  background-color: hsla(217, 89%, 71%, 0.5);
+  color: white;
+  margin: auto;
+  margin-top: 5px;
+  padding: 10px 10px;
+  border: 4px solid white;
+  text-align: center;
+}
+
+section {
+  background-color: #757d8a;
+  padding-left: 20px;
+  padding-bottom: 500px;
+}
+
+.left, .right {
+  color: #333436;
+  background-color: #72a5f7;
+  border-radius: 15px;
+  border: 2px solid black;
+  min-height: 150px;
+}
+
+.left {
+  width: 50%;
+}
+
+
+.left p {
+  margin: auto;
+  padding: 15px 15px 10px 15px;
+  text-align: left;
+}
+
+.right img {
+  margin: auto;
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
